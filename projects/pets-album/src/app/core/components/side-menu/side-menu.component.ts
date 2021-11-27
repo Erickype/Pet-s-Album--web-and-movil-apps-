@@ -1,4 +1,5 @@
-import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { IMenu, MenuService } from '../../../helpers/services/menu.service';
 
 @Component({
   selector: 'alb-side-menu',
@@ -7,9 +8,11 @@ import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '
 })
 export class SideMenuComponent implements OnInit {  
 
+  listMenu:IMenu[]
   opened=true;
 
-  constructor() { 
+  constructor(private menuService:MenuService) { 
+    this.listMenu = this.menuService.getMenu()
   }
 
   ngOnInit(): void {

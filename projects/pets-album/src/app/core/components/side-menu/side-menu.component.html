@@ -1,12 +1,12 @@
 <mat-nav-list>
-    <a mat-list-item href='#'>
-        <mat-icon color="accent">add</mat-icon>
-        Agregar mascota
-    </a>
-    <a mat-list-item href='#'>
-        <mat-icon color="primary">pets</mat-icon>
-        Ver mascotas
-    </a>
+    <mat-list-item *ngFor="let menu of listMenu">
+        <a [routerLink]="menu.url">
+            <button mat-icon-button>
+                <mat-icon class="icon" [svgIcon]="menu.icon"></mat-icon>
+                <span *ngIf="opened">{{menu.title}}</span>
+            </button>
+        </a>
+    </mat-list-item>
 </mat-nav-list>
 <mat-accordion>
     <mat-expansion-panel>

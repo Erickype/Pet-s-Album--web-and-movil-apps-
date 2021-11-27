@@ -12,9 +12,9 @@ export interface IMenu {
 export class MenuService {
 
   private listMenu: IMenu[] = [
-    { title: 'Dashboard', url: '/dashboard', icon: 'tablero' },
-    { title: 'Agregar Mascota', url: '/addPet', icon: 'historia' },
-    { title: 'Ver Mascotas', url: '/pets', icon: 'medico' }
+    { title: 'Dashboard', url: '/dashboard', icon: 'dashboard' },
+    { title: 'Agregar Mascota', url: '/addPet', icon: 'addPet' },
+    { title: 'Ver Mascotas', url: '/pets', icon: 'pets' }
   ]
   constructor() { }
 

@@ -13,9 +13,9 @@ interface IIcon {
 export class IconsService {
 
   private listIcons:IIcon[] = [
-    {name:'dashboard', path: '../assets/icons/dashboard.png'},
-    {name:'addPet', path: '../assets/icons/addPet.png'},
-    {name:'pets', path: '../assets/icons/pets.png'}
+    {name:'dashboard', path: '../assets/icons/dashboard.svg'},
+    {name:'addPet', path: '../assets/icons/addPet.svg'},
+    {name:'pets', path: '../assets/icons/pets.svg'}
   ]
   constructor(private matIconRegistry: MatIconRegistry,
     private domSanitizer:DomSanitizer) { 

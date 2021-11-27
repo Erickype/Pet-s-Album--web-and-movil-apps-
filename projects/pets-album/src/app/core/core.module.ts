@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { PageLoginComponent } from './pages/page-login/page-login.component';
 import { LoginComponent } from './components/login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 //flex
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -26,6 +28,7 @@ import { environment } from '../../environments/environment.prod';
 import { HeaderComponent } from './components/header/header.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { SideMenuComponent } from './components/side-menu/side-menu.component';
+import { IconsService } from '../helpers/services/icons.service';
 
 @NgModule({
   declarations: [
@@ -51,7 +54,9 @@ import { SideMenuComponent } from './components/side-menu/side-menu.component';
     MatMenuModule,
     MatSidenavModule,
     MatListModule,
-    MatExpansionModule
+    MatExpansionModule,
+    RouterModule,
+    HttpClientModule
   ],
   providers: [
     {
@@ -66,4 +71,6 @@ import { SideMenuComponent } from './components/side-menu/side-menu.component';
     HomePageComponent
   ],
 })
-export class CoreModule { }
+export class CoreModule {
+  constructor(private iconService:IconsService){}
+ }
