@@ -1,0 +1,14 @@
+:host {
+    width: 70%;
+    max-height: max-content;
+    display: block;
+}
+
+h2 {
+    text-align: center;
+    font-size: xx-large;
+}
+
+.recaptcha {
+    padding: 10px 0;
+}
