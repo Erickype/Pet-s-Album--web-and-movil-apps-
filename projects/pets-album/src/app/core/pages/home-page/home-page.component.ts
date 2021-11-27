@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'alb-home-page',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomePageComponent implements OnInit {
 
+  @Input() wasClicked: boolean = false;
+
   constructor() { }
 
+
   ngOnInit(): void {
-  }
+  } 
+
+
 
 }

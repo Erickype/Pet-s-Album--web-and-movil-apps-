@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'alb-header',
@@ -7,10 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+  isClicked = false;
+  @Output() wasClicked = new EventEmitter<boolean>()
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  logout(){}
+  logout() { }
+
+  clicked() {
+
+
+    this.isClicked = !this.isClicked
+    this.wasClicked.emit(this.isClicked)
+  }
 }

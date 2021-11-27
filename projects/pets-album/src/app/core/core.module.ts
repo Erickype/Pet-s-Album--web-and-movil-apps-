@@ -15,6 +15,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatMenuModule} from '@angular/material/menu';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatListModule} from '@angular/material/list';
 
 //recaptcha
 import { FormsModule } from '@angular/forms';
@@ -22,13 +25,15 @@ import { RecaptchaModule, RecaptchaFormsModule, RecaptchaSettings, RECAPTCHA_SET
 import { environment } from '../../environments/environment.prod';
 import { HeaderComponent } from './components/header/header.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
+import { SideMenuComponent } from './components/side-menu/side-menu.component';
 
 @NgModule({
   declarations: [
     PageLoginComponent,
     LoginComponent,
     HeaderComponent,
-    HomePageComponent
+    HomePageComponent,
+    SideMenuComponent
   ],
   imports: [
     CommonModule,
@@ -43,7 +48,10 @@ import { HomePageComponent } from './pages/home-page/home-page.component';
     MatInputModule,
     MatCardModule,
     MatToolbarModule,
-    MatMenuModule
+    MatMenuModule,
+    MatSidenavModule,
+    MatListModule,
+    MatExpansionModule
   ],
   providers: [
     {
