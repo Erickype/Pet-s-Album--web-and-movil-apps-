@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PetsPageComponent } from './pages/pets-page/pets-page.component';
-import { PetsFormComponent } from './components/pets-form/pets-form.component';
+import { MyPetsRoutingModule } from './my-pets-routing.module';
 
 
 
 @NgModule({
   declarations: [
-    PetsPageComponent,
-    PetsFormComponent
+    PetsPageComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    MyPetsRoutingModule
   ]
 })
-export class PetsModule { }
+export class MyPetsModule { }
