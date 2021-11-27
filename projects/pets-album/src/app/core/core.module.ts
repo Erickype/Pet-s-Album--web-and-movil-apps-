@@ -13,16 +13,22 @@ import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
 import {MatCardModule} from '@angular/material/card';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatMenuModule} from '@angular/material/menu';
 
 //recaptcha
 import { FormsModule } from '@angular/forms';
 import { RecaptchaModule, RecaptchaFormsModule, RecaptchaSettings, RECAPTCHA_SETTINGS } from 'ng-recaptcha';
 import { environment } from '../../environments/environment.prod';
+import { HeaderComponent } from './components/header/header.component';
+import { HomePageComponent } from './pages/home-page/home-page.component';
 
 @NgModule({
   declarations: [
     PageLoginComponent,
-    LoginComponent
+    LoginComponent,
+    HeaderComponent,
+    HomePageComponent
   ],
   imports: [
     CommonModule,
@@ -35,7 +41,9 @@ import { environment } from '../../environments/environment.prod';
     ReactiveFormsModule,
     FlexLayoutModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    MatToolbarModule,
+    MatMenuModule
   ],
   providers: [
     {
@@ -46,7 +54,8 @@ import { environment } from '../../environments/environment.prod';
     },
   ],
   exports:[
-    PageLoginComponent
+    PageLoginComponent,
+    HomePageComponent
   ],
 })
 export class CoreModule { }
