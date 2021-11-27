@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { url } from 'inspector';
 
 export interface IPet {
   name: string
@@ -17,4 +16,10 @@ export class PetsService {
     {name:'Sansdru', description: 'Sansdru ven hacia acá', img: "../../assets/img/pets/pet2.png"},
     {name:'Copo', description: 'Copo y sus ocurrencias', img: "../../assets/img/pets/pet3.png"}
   ]
+
+  constructor() { }
+
+  getData(): IPet[] {
+    return [...this.petsList]
+  }
 }
