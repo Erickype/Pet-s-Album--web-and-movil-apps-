@@ -10,6 +10,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 //material
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
+import {MatIconModule} from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {MatInputModule} from '@angular/material/input';
     MatFormFieldModule,
     FlexLayoutModule,
     MatInputModule,
-    AddPetRoutingModule
+    AddPetRoutingModule,
+    MatIconModule
   ],
   exports:[
     AddPetPageComponent
