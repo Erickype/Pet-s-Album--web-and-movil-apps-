@@ -13,8 +13,8 @@ export class MenuService {
 
   private listMenu: IMenu[] = [
     { title: 'Dashboard', url: '/dashboard', icon: 'dashboard' },
-    { title: 'Agregar Mascota', url: '/addPet', icon: 'addPet' },
-    { title: 'Ver Mascotas', url: '/pets', icon: 'pets' }
+    { title: 'Add Pet', url: '/addPet', icon: 'addPet' },
+    { title: 'My Pets', url: '/pets', icon: 'pets' }
   ]
   constructor() { }
 
