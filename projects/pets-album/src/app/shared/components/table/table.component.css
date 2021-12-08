@@ -12,6 +12,10 @@ th {
     width: 20vw;
 }
 
+.rows:hover {
+    background-color: rgb(126, 123, 125);
+}
+
 perfect-scrollbar {
     max-height: 60vh;
     height: 60vh;

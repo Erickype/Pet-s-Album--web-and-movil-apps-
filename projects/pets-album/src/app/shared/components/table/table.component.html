@@ -8,7 +8,7 @@
             </ng-container>
             <ng-content></ng-content>
             <tr mat-header-row *matHeaderRowDef="listFields; sticky:true"></tr>
-            <tr mat-row *matRowDef="let row; columns:listFields"></tr>
+            <tr class="rows" mat-row *matRowDef="let row; columns:listFields"></tr>
         </table>
     </perfect-scrollbar>
     <alb-paginator #paginator></alb-paginator>
