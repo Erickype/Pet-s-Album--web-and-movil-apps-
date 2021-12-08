@@ -1,5 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { IPet, PetsService } from 'projects/pets-album/src/app/helpers/services/pets/pets.service';
+import { Component, OnInit } from '@angular/core';
+import { MetadataColumns } from 'projects/pets-album/src/app/shared/interfaces/metadatacolumns.interface';
 
 @Component({
   selector: 'alb-pets-list',
@@ -8,15 +8,37 @@ import { IPet, PetsService } from 'projects/pets-album/src/app/helpers/services/
 })
 export class PetsListComponent implements OnInit {
 
-  petsList: IPet[]
-  pos = 0;
+  data: any[]=[
+    {id:1, name: "Fido", description:"Fido es un perro alegre"},
+    {id:2, name: "Fido", description:"Fido es un perro alegre"},
+    {id:3, name: "Fido", description:"Fido es un perro alegre"},
+    {id:4, name: "Fido", description:"Fido es un perro alegre"},
+    {id:5, name: "Fido", description:"Fido es un perro alegre"},
+    {id:6, name: "Fido", description:"Fido es un perro alegre"},
+    {id:7, name: "Fido", description:"Fido es un perro alegre"},
+    {id:8, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:9, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:10, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:11, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:12, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:13, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:14, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:15, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:16, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:17, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:18, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:19, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:20, name: "Fido", description:"Fido es un perro alegre"},    
+  ]
 
-  listFields: string[] = ['name', 'description'];
-  data : any;
+  metadataColumns : MetadataColumns[]=[
+    {field: "id", title:"ID"},
+    {field: "name", title:"NOMBRE"},
+    {field: "description", title:"DESCRIPCIÓN"}
+  ]
 
-  constructor(private petsService: PetsService) {
-    this.petsList = this.petsService.getData()
-    this.data=this.petsList
+  constructor() {
+
   }
 
   ngOnInit(): void {

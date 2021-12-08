@@ -12,6 +12,8 @@ import {MatTableModule} from '@angular/material/table';
 
 //fxlayoutr
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { TableComponent } from '../../shared/components/table/table.component';
+import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -25,10 +27,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatCardModule,
     MatButtonModule,
     MatTableModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    SharedModule
   ],
   exports:[
-    PetsPageComponent
+    PetsPageComponent,
   ]
 })
 export class MyPetsModule {}
