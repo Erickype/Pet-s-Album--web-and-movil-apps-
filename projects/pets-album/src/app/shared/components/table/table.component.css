@@ -1,5 +1,13 @@
 table {
     width: 100%;
+    height: 50%;
     align-content: center;
-    max-height: 70vh;
+}
+
+perfect-scrollbar {
+    max-height: 60vh;
+}
+
+alb-paginator {
+    min-width: fit-content
 }
