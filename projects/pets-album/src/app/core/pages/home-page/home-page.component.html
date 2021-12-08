@@ -1,6 +1,6 @@
 <div class="container">
     <alb-header (wasClicked)="wasClicked=$event"></alb-header>
-    <mat-sidenav-container autosize>
+    <mat-sidenav-container>
         <mat-sidenav class="sidenav" mode="side" #sidenav [(opened)]="wasClicked">
             <alb-side-menu></alb-side-menu>
         </mat-sidenav>

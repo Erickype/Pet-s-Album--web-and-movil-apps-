@@ -29,6 +29,16 @@ export class PetsListComponent implements OnInit {
     {id:18, name: "Fido", description:"Fido es un perro alegre"},    
     {id:19, name: "Fido", description:"Fido es un perro alegre"},    
     {id:20, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:21, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:22, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:23, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:24, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:25, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:26, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:27, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:28, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:29, name: "Fido", description:"Fido es un perro alegre"},    
+    {id:30, name: "Fido", description:"Fido es un perro alegre"},    
   ]
 
   metadataColumns : MetadataColumns[]=[

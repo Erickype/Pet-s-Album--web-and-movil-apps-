@@ -2,6 +2,7 @@ import { Component, ContentChildren, Input, OnInit, QueryList, SimpleChanges, Vi
 import { MatColumnDef, MatTable, MatTableDataSource } from '@angular/material/table';
 import { MetadataColumns } from '../../interfaces/metadatacolumns.interface';
 
+
 @Component({
   selector: 'alb-table',
   templateUrl: './table.component.html',
@@ -9,6 +10,7 @@ import { MetadataColumns } from '../../interfaces/metadatacolumns.interface';
 })
 export class TableComponent implements OnInit {
 
+  config: any;
   @Input() data: any;
   @Input() metadataColumns!: MetadataColumns[]
   /*@ViewChild('paginator') paginatorComp!: PaginatorComponent;

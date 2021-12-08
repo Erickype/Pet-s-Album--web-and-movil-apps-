@@ -6,9 +6,12 @@ import { TableComponent } from './components/table/table.component';
 import {MatTableModule} from '@angular/material/table';
 
 //scrollbar
-import { PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
-import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
-import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+import { PerfectScrollbarConfigInterface, PerfectScrollbarModule, PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
+import { ContainerComponent } from './components/container/container.component';
+
+//fxlayout
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX:true
@@ -16,16 +19,20 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
 
 @NgModule({
   declarations: [
-    TableComponent
+    TableComponent,
+    ContainerComponent
   ],
   imports: [
     CommonModule,
     MatTableModule,
-    PerfectScrollbarModule
+    PerfectScrollbarModule,
+    FlexLayoutModule
   ],
   exports:[
     TableComponent,
-    MatTableModule
+    MatTableModule,
+    PerfectScrollbarModule,
+    ContainerComponent
   ],
   providers:[
     {

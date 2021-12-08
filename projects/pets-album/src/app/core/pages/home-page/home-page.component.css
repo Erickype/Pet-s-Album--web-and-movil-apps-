@@ -1,7 +1,19 @@
-mat-sidenav-container {
-    height: 100vh;
+mat-sidenav-content {
+    max-height: 100vh;
+    height: 85.8vh;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .sidenav {
     min-width: 300px;
+}
+
+.container {
+    max-height: 100vh;
+}
+
+alb-header {
+    max-height: fit-content;
 }
