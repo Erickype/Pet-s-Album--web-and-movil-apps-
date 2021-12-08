@@ -54,4 +54,8 @@ export class PetsListComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openForm(row: any){}
+
+  delete(row: any){}
+
 }

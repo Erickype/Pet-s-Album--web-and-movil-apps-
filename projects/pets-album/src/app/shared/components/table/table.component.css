@@ -1,7 +1,15 @@
 table {
     width: 100%;
     height: 60vh;
+    padding-left: 2em;
+    padding-right: 2em;
     align-content: center;
+}
+
+td,
+th {
+    max-width: max-content;
+    width: 20vw;
 }
 
 perfect-scrollbar {

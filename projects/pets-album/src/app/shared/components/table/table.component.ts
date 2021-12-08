@@ -14,11 +14,11 @@ export class TableComponent implements OnInit {
   config: any;
   @Input() data: any;
   @Input() metadataColumns!: MetadataColumns[]
-  @ViewChild('paginator') paginatorComp!: PaginatorComponent;/*
+  @ViewChild('paginator') paginatorComp!: PaginatorComponent;
   @ContentChildren(MatColumnDef, { descendants: true })
   columnsDef!: QueryList<MatColumnDef>;
   @ViewChild(MatTable, { static: true }) table!: MatTable<any>
-*/
+
   dataSource!: MatTableDataSource<any>;
 
   listFields: string[] = [];
@@ -29,8 +29,6 @@ export class TableComponent implements OnInit {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
-    //Add '${implements OnChanges}' to the class.
     if (changes.metadataColumns) {
       this.listFields = this.metadataColumns.map((x) => x.field)
       this.dataSource = new MatTableDataSource(this.data);
@@ -40,18 +38,11 @@ export class TableComponent implements OnInit {
     this.dataSource.paginator = this.paginatorComp.pag;
   }
 
-  ngAfterContentInit(): void {
-    //Called after ngOnInit when the component's or directive's content has been initialized.
-    //Add 'implements AfterContentInit' to the class.   
+  ngAfterContentInit(): void { 
 
-    /*this.columnsDef.forEach((columnsDef) => {
+    this.columnsDef.forEach((columnsDef) => {
       this.listFields.push(columnsDef.name)
       this.table.addColumnDef(columnsDef)
-
-      console.log("alter");
-
-    })*/
-
-
+    })
   }
 }

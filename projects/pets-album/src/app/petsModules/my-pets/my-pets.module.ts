@@ -9,6 +9,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import { PetsListComponent } from './components/pets-list/pets-list.component';
 import {MatTableModule} from '@angular/material/table';
+import {MatIconModule} from '@angular/material/icon';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 //fxlayoutr
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -27,7 +29,9 @@ import { SharedModule } from '../../shared/shared.module';
     MatButtonModule,
     MatTableModule,
     FlexLayoutModule,
-    SharedModule
+    SharedModule,
+    MatIconModule,
+    MatTooltipModule
   ],
   exports:[
     PetsPageComponent,

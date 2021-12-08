@@ -1,1 +1,13 @@
-<alb-table [data]="data" [metadataColumns]="metadataColumns"></alb-table>
+<alb-table [data]="data" [metadataColumns]="metadataColumns">
+    <ng-container matColumnDef="Acciones">
+        <th mat-header-cell *matHeaderCellDef></th>
+        <td mat-cell *matCellDef="let row" class="align-rigth">
+            <button mat-icon-button color="primary" (click)="openForm(row)" matToolTip="EDITAR">
+                <mat-icon>edit</mat-icon>
+            </button>
+            <button mat-icon-button color="accent" (click)="delete(row)" matToolTip="ELIMINAR">
+                <mat-icon>delete</mat-icon>
+            </button>
+        </td>
+    </ng-container>
+</alb-table>
