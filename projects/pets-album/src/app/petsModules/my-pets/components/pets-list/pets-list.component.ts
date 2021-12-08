@@ -43,8 +43,8 @@ export class PetsListComponent implements OnInit {
 
   metadataColumns : MetadataColumns[]=[
     {field: "id", title:"ID"},
-    {field: "name", title:"NOMBRE"},
-    {field: "description", title:"DESCRIPCIÓN"}
+    {field: "name", title:"NAME"},
+    {field: "description", title:"DESCRIPTION"}
   ]
 
   constructor() {
