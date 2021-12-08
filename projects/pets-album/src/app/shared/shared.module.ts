@@ -13,6 +13,8 @@ import { ContainerComponent } from './components/container/container.component';
 //fxlayout
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { PaginatorComponent } from './components/paginator/paginator.component';
+import { KeypadComponent } from './components/keypad/keypad.component';
+import { DownloadComponent } from './components/download/download.component';
 
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
@@ -23,7 +25,9 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   declarations: [
     TableComponent,
     ContainerComponent,
-    PaginatorComponent
+    PaginatorComponent,
+    KeypadComponent,
+    DownloadComponent
   ],
   imports: [
     CommonModule,
@@ -38,6 +42,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     PerfectScrollbarModule,
     ContainerComponent,
     MatPaginatorModule,
+    KeypadComponent,
+    DownloadComponent,
 
   ],
   providers:[

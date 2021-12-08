@@ -15,12 +15,14 @@ import {MatTooltipModule} from '@angular/material/tooltip';
 //fxlayoutr
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SharedModule } from '../../shared/shared.module';
+import { FormComponent } from './components/form/form.component';
 
 @NgModule({
   declarations: [
     PetsPageComponent,
     PetCardComponent,
-    PetsListComponent
+    PetsListComponent,
+    FormComponent
   ],
   imports: [
     CommonModule,
@@ -35,6 +37,7 @@ import { SharedModule } from '../../shared/shared.module';
   ],
   exports:[
     PetsPageComponent,
+    FormComponent,
   ]
 })
 export class MyPetsModule {}
