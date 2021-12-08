@@ -1,6 +1,7 @@
 import { Component, ContentChildren, Input, OnInit, QueryList, SimpleChanges, ViewChild } from '@angular/core';
 import { MatColumnDef, MatTable, MatTableDataSource } from '@angular/material/table';
 import { MetadataColumns } from '../../interfaces/metadatacolumns.interface';
+import { PaginatorComponent } from '../paginator/paginator.component';
 
 
 @Component({
@@ -13,7 +14,7 @@ export class TableComponent implements OnInit {
   config: any;
   @Input() data: any;
   @Input() metadataColumns!: MetadataColumns[]
-  /*@ViewChild('paginator') paginatorComp!: PaginatorComponent;
+  @ViewChild('paginator') paginatorComp!: PaginatorComponent;/*
   @ContentChildren(MatColumnDef, { descendants: true })
   columnsDef!: QueryList<MatColumnDef>;
   @ViewChild(MatTable, { static: true }) table!: MatTable<any>
@@ -35,10 +36,9 @@ export class TableComponent implements OnInit {
       this.dataSource = new MatTableDataSource(this.data);
     }
   }
-/*
   ngAfterViewInit() {
     this.dataSource.paginator = this.paginatorComp.pag;
-  }*/
+  }
 
   ngAfterContentInit(): void {
     //Called after ngOnInit when the component's or directive's content has been initialized.
