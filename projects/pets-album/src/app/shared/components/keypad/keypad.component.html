@@ -1,1 +1,13 @@
-<p>keypad works!</p>
+<div fxLayout="column" fxLayoutGap="10px">
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+            </mat-panel-title>
+            <mat-panel-description>
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <button mat-fab *ngFor="let button of keypadButtons" [color]="button.color" [matTooltip]="button.tooltip" (click)="doAction(button.action)">
+            <mat-icon>{{button.icon}}</mat-icon>
+        </button>
+    </mat-expansion-panel>
+</div>
