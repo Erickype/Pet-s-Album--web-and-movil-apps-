@@ -1,0 +1,7 @@
+div {
+    position: fixed;
+    bottom: 70px;
+    right: 10px;
+    z-index: 1000000;
+    border-radius: 20px;
+}
