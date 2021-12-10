@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  siteKey: '6LeDJF8dAAAAAJM4JamnoxT5ij5oPFdxoWYYBjzY'
+  siteKey: '6LeDJF8dAAAAAJM4JamnoxT5ij5oPFdxoWYYBjzY',
+  API_URL: 'http://localhost:4500/api'
 };
 
 
