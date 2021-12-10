@@ -6,18 +6,18 @@
 </mat-toolbal>
 
 <mat-dialog-content>
-    <form fxLayout="column">
+    <form fxLayout="column" [formGroup]="group">
         <mat-form-field>
             <mat-label>Pet's name</mat-label>
-            <input type="text" matInput required>
+            <input type="text" matInput formControlName="petname" required>
         </mat-form-field>
         <mat-form-field>
             <mat-label>Description</mat-label>
-            <input type="text" matInput required>
+            <input type="text" matInput formControlName="description" required>
         </mat-form-field>
         <mat-form-field>
             <mat-label>Profile</mat-label>
-            <input type="text" matInput required>
+            <input type="text" matInput formControlName="profile" required>
         </mat-form-field>
         <div fxLayout="row" fxLayoutAlign="end" fxLayoutGap="10px">
             <button mat-raised-button color="primary" type="button" (click)="save()">
