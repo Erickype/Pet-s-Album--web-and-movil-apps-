@@ -11,6 +11,10 @@ import { PetsListComponent } from './components/pets-list/pets-list.component';
 import {MatTableModule} from '@angular/material/table';
 import {MatIconModule} from '@angular/material/icon';
 import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatInputModule} from '@angular/material/input';
 
 //fxlayoutr
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -33,11 +37,19 @@ import { FormComponent } from './components/form/form.component';
     FlexLayoutModule,
     SharedModule,
     MatIconModule,
-    MatTooltipModule
+    MatTooltipModule,
+    MatToolbarModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule
   ],
   exports:[
     PetsPageComponent,
     FormComponent,
+    MatToolbarModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule
   ]
 })
 export class MyPetsModule {}

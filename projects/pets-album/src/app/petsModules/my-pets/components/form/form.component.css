@@ -1,0 +1,12 @@
+.toolbar {
+    align-items: center;
+    align-content: center;
+}
+
+.title {
+    padding-top: 15px;
+}
+
+.panel-container {
+    width: 600px;
+}
